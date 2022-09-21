@@ -7,8 +7,6 @@ server:
 
 spring:
   profiles: dev
-  application:
-    name: springcloud-gateway-dev
   cloud:
     gateway:
       routes:

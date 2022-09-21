@@ -1,9 +1,14 @@
+spring:
+    profiles:
+        active: dev
+---
 server:
   port: 9753
 
 spring:
+  profiles: dev
   application:
-    name: springcloud-gateway
+    name: springcloud-gateway-dev
   cloud:
     gateway:
       routes:

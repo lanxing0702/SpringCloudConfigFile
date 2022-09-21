@@ -9,7 +9,7 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false #不向eureka注册自己
+    register-with-eureka: false 
     service-url:
       defaultZone: http://jzh.eureka7001.com:7001/eureka/,http://jzh.eureka7002.com:7002/eureka/,http://jzh.eureka7003.com:7003/eureka/
       
@@ -21,7 +21,7 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false #不向eureka注册自己
+    register-with-eureka: false 
     service-url:
       defaultZone: http://jzh.eureka7001.com:7001/eureka/,http://jzh.eureka7002.com:7002/eureka/,http://jzh.eureka7003.com:7003/eureka/
 
@@ -33,10 +33,9 @@ spring:
   profiles: hystrix
   application:
     name: eureka-consumer-feign-hystrix-dashboard
-# 服务提供端口
 server:
   port: 9001
-# 注册到eureka服务端的地址
+
 eureka:
   client:
     service-url:

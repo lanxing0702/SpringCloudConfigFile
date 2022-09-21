@@ -29,8 +29,6 @@ eureka:
     instance-id: SpringCloud-provider-dept-8001
     prefer-ip-address: true
   client:
-    #register-with-eureka: true #表示是否向Eureka注册自己
-    #fetch-registry: true #false表示自己是注册中心
     service-url:
       defaultZone: http://jzh.eureka7001.com:7001/eureka/,http://jzh.eureka7002.com:7002/eureka/,http://jzh.eureka7003.com:7003/eureka/
 
@@ -48,7 +46,6 @@ management:
   endpoints:
     web:
       exposure:
-        #默认值访问health,info端点  用*可以包含全部端点
         include: "*"
 ---
 server:
@@ -118,8 +115,6 @@ eureka:
     instance-id: SpringCloud-provider-dept-8003
     prefer-ip-address: true
   client:
-    #register-with-eureka: true #表示是否向Eureka注册自己
-    #fetch-registry: true #false表示自己是注册中心
     service-url:
       defaultZone: http://jzh.eureka7001.com:7001/eureka/,http://jzh.eureka7002.com:7002/eureka/,http://jzh.eureka7003.com:7003/eureka/
 
@@ -137,7 +132,6 @@ management:
   endpoints:
     web:
       exposure:
-        #默认值访问health,info端点  用*可以包含全部端点
         include: "*"
 
 ---
@@ -167,8 +161,6 @@ eureka:
     instance-id: SpringCloud-provider-dept-hystrix-8001
     prefer-ip-address: true
   client:
-    #register-with-eureka: true #表示是否向Eureka注册自己
-    #fetch-registry: true #false表示自己是注册中心
     service-url:
       defaultZone: http://jzh.eureka7001.com:7001/eureka/,http://jzh.eureka7002.com:7002/eureka/,http://jzh.eureka7003.com:7003/eureka/
 
@@ -186,5 +178,4 @@ management:
   endpoints:
     web:
       exposure:
-        #默认值访问health,info端点  用*可以包含全部端点
         include: "*"
